@@ -1,0 +1,29 @@
+@import "tailwindcss";
+body {
+  background-color: #f5f8ff;
+}
+.logo {
+  height: auto;
+  width: max-content;
+}
+.f-margin {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+@media (max-width: 767px) {
+  .f-margin {
+    margin: auto;
+  }
+}
+.navigation a {
+  text-decoration: none;
+  margin-left: 48px;
+}
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+.color-nav {
+  color: #8987a1;
+}
