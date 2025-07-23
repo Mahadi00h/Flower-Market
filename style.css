@@ -12,7 +12,14 @@ body {
 }
 @media (max-width: 767px) {
   .f-margin {
-    margin: auto;
+    margin: 100px 20px 40px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .mobile-sec {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
   }
 }
 .navigation a {
