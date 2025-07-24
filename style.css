@@ -1,4 +1,7 @@
 @import "tailwindcss";
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #f5f8ff;
 }
@@ -33,6 +36,16 @@ body {
 }
 .color-nav {
   color: #8987a1;
+}
+@media (max-width: 768px) {
+  .card-holder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    height: 340px;
+    max-width: 170px;
+    margin: 0 auto;
+  }
 }
 .card {
   height: 485px;
