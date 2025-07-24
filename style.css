@@ -1,9 +1,11 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   box-sizing: border-box;
 }
 body {
   background-color: #f5f8ff;
+  font-family: "Noto Serif", serif;
 }
 .logo {
   height: auto;
@@ -13,39 +15,9 @@ body {
   margin-left: 100px;
   margin-right: 100px;
 }
-@media (max-width: 767px) {
-  .f-margin {
-    margin: 100px 20px 40px 20px;
-  }
-}
-@media (max-width: 768px) {
-  .mobile-sec {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-  }
-}
 .navigation a {
   text-decoration: none;
   margin-left: 48px;
-}
-@media (max-width: 767px) {
-  .hide-mobile {
-    display: none;
-  }
-}
-.color-nav {
-  color: #8987a1;
-}
-@media (max-width: 768px) {
-  .card-holder {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .card {
-    height: 340px;
-    max-width: 170px;
-    margin: 0 auto;
-  }
 }
 .card {
   height: 485px;
@@ -77,4 +49,56 @@ body {
   background-color: rgba(34, 160, 188, 0.304);
   transform: scale(1.05);
   border-radius: 20px;
+}
+.shop-img {
+  width: 100%;
+  height: 500px;
+}
+@media (max-width: 768px) {
+  .card-holder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    height: min-content;
+    max-width: 170px;
+    margin: 20px auto;
+  }
+  .mobile-sec {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .f-margin {
+    margin: 100px 20px 40px 20px;
+  }
+  .color-nav {
+    color: #8987a1;
+  }
+  .shop-img {
+    max-width: 400px;
+    max-height: 400px;
+    margin-bottom: 20px;
+  }
+  .trusted-sec {
+    flex-direction: column;
+  }
+  .mobile-font {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .mobile-font2 {
+    font-size: 14px;
+    font-weight: light;
+  }
+  .mobile-font3 {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+  }
+  .mobile-font3 h2 {
+    font-weight: bolder;
+  }
 }
