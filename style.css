@@ -7,8 +7,8 @@ body {
   width: max-content;
 }
 .f-margin {
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 @media (max-width: 767px) {
   .f-margin {
@@ -33,4 +33,35 @@ body {
 }
 .color-nav {
   color: #8987a1;
+}
+.card {
+  height: 485px;
+  width: 255px;
+  text-align: center;
+}
+.card img {
+  width: max-content;
+  height: 320px;
+}
+.card h1 {
+  font-size: 22px;
+  color: #111111;
+  margin-top: 15px;
+}
+.card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111111;
+}
+.card button {
+  height: 50px;
+  width: 100%;
+  background-color: #e95a08;
+  color: white;
+  margin-top: 10px;
+}
+.card button:hover {
+  background-color: rgba(34, 160, 188, 0.304);
+  transform: scale(1.05);
+  border-radius: 20px;
 }
