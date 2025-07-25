@@ -11,6 +11,7 @@ p {
 body {
   background-color: #f5f8ff;
   font-family: "Noto Serif", serif;
+  margin-bottom: 50px;
 }
 .logo {
   height: auto;
@@ -131,7 +132,7 @@ body {
 .contact-us {
   height: 530px;
   width: 100%;
-  margin: 120px 0 0 0;
+  margin: 120px 0;
   background-image: url(./assets/news-letter-bg.png);
   display: flex;
   justify-content: center;
@@ -261,5 +262,10 @@ body {
   .input-feild button {
     font-size: 0.7rem;
     color: white;
+  }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
   }
 }
