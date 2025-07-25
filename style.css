@@ -3,6 +3,11 @@
 * {
   box-sizing: border-box;
 }
+p {
+  color: gray;
+  font-weight: 300;
+  font-size: 22px;
+}
 body {
   background-color: #f5f8ff;
   font-family: "Noto Serif", serif;
@@ -54,6 +59,75 @@ body {
   width: 100%;
   height: 500px;
 }
+.plant-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 210px 210px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.plant-container h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.plant-container h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.bloom-plant {
+  height: 100%;
+  width: 100%;
+  grid-area: 1 / 1 / 2 / 2;
+  isolation: isolate;
+  background-image: url(./assets/deal-bloom.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+.bloom-plant::after {
+  content: "";
+  position: absolute;
+  background-color: #111111;
+  opacity: 0.5;
+  inset: 0;
+  z-index: -1;
+}
+.zabo-plant {
+  grid-area: 1 / 2 / 3 / 4;
+  background-image: url(./assets/deal-zabo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.zabo-plant::after {
+  content: "";
+  position: absolute;
+  background-color: #111111;
+  inset: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+.ana-plant {
+  grid-area: 2 / 1 / 3 / 2;
+  background-image: url(./assets/deal-ana.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.ana-plant::after {
+  content: "";
+  position: absolute;
+  background-color: #111111;
+  inset: 0;
+  opacity: 0.45;
+  z-index: -1;
+}
 @media (max-width: 768px) {
   .card-holder {
     grid-template-columns: repeat(2, 1fr);
@@ -79,7 +153,7 @@ body {
   }
   .shop-img {
     max-width: 400px;
-    max-height: 400px;
+    max-height: 350px;
     margin-bottom: 20px;
   }
   .trusted-sec {
@@ -92,6 +166,7 @@ body {
   .mobile-font2 {
     font-size: 14px;
     font-weight: light;
+    color: grey;
   }
   .mobile-font3 {
     font-weight: 600;
@@ -100,5 +175,26 @@ body {
   }
   .mobile-font3 h2 {
     font-weight: bolder;
+  }
+  .plant-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    width: 80vw;
+    gap: 20px;
+    margin: 0 auto;
+  }
+  .bloom-plant {
+    height: 184px;
+    width: 100%;
+  }
+  .ana-plant {
+    height: 184px;
+    width: 100%;
+  }
+  .zabo-plant {
+    height: 184px;
+    width: 100%;
   }
 }
