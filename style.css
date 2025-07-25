@@ -34,6 +34,20 @@ body {
   width: max-content;
   height: 320px;
 }
+.card img:hover{
+  scale: 0.8;
+  animation: imgrotate 3s linear infinite 0.5s;
+}
+@keyframes imgrotate {
+   from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+  
+}
 .card h1 {
   font-size: 22px;
   color: #111111;
@@ -52,9 +66,9 @@ body {
   margin-top: 10px;
 }
 .card button:hover {
-  background-color: rgba(34, 160, 188, 0.304);
   transform: scale(1.05);
   border-radius: 20px;
+  transform: rotateY(25deg) rotateX(45deg) rotateZ(20deg);
 }
 .shop-img {
   width: 100%;
@@ -160,6 +174,11 @@ body {
   width: 20%;
   background-color: #e95a08;
   color: white;
+}
+.contact-us button:hover {
+  transform: scale(1.05);
+  border-radius: 20px;
+  transform: rotateY(25deg) rotateX(45deg) rotateZ(20deg);
 }
 .about-us {
   font-family: "Inter", sans-serif;
