@@ -160,6 +160,17 @@ body {
   background-color: #e95a08;
   color: white;
 }
+.about-us {
+  font-family: "Inter", sans-serif;
+  color: #8987a1;
+}
+.about-us li {
+  margin-bottom: 30px;
+}
+.div-4 img {
+  height: 36px;
+  width: 36px;
+}
 
 @media (max-width: 768px) {
   .card-holder {
